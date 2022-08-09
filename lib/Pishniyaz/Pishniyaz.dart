@@ -1,5 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:hardware_app/Pishniyaz/capacitor.dart';
+import 'package:hardware_app/Pishniyaz/crystal.dart';
+import 'package:hardware_app/Pishniyaz/diod.dart';
+import 'package:hardware_app/Pishniyaz/fuse.dart';
+import 'package:hardware_app/Pishniyaz/inductor.dart';
+import 'package:hardware_app/Pishniyaz/microcontroller.dart';
+import 'package:hardware_app/Pishniyaz/relay.dart';
 import 'package:hardware_app/Pishniyaz/resistor.dart';
+import 'package:hardware_app/Pishniyaz/transformer.dart';
+import 'package:hardware_app/Pishniyaz/transistor.dart';
 
 class pishniyaz extends StatelessWidget {
   const pishniyaz({Key? key}) : super(key: key);
@@ -45,7 +54,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => capacitor_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -60,7 +74,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => fuse_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -75,7 +94,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => inductor_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -90,7 +114,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => diod_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -105,7 +134,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => relay_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -120,7 +154,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => crystall_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -135,7 +174,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => transistor_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -150,7 +194,13 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => microcontroller_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -165,7 +215,12 @@ class pishniyaz extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => transformer_main()),
+                  );
+                },
               ),
             ),
           ],
