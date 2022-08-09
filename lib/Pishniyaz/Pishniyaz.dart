@@ -28,8 +28,7 @@ class pishniyaz extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(
-                        builder: (context) => const resistor_page()),
+                    MaterialPageRoute(builder: (context) => resistor_main()),
                   );
                 },
               ),
