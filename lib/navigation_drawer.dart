@@ -4,6 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:hardware_app/drawer_item.dart';
 import 'package:hardware_app/people.dart';
 import 'package:hardware_app/drawer_item.dart';
+import 'package:hardware_app/navigation_drawer.dart';
+import 'package:hardware_app/privacyandpolicy.dart';
+import 'package:hardware_app/termandcondition.dart';
 
 class NavigationDrawer extends StatelessWidget {
   const NavigationDrawer({Key? key}) : super(key: key);
@@ -127,9 +130,18 @@ class NavigationDrawer extends StatelessWidget {
     Navigator.pop(context);
 
     switch (index) {
-      case 0:
-        Navigator.push(
-            context, MaterialPageRoute(builder: (context) => const People()));
+      case 4:
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => Termandcondition()));
+        break;
+
+      case 5:
+        Navigator.push(context,
+            MaterialPageRoute(builder: (context) => PrivacyAndPolicy()));
+        break;
+
+      case 6:
+        Navigator.push(context, MaterialPageRoute(builder: (context) => FAQ()));
         break;
       case 7:
         exit(0);
