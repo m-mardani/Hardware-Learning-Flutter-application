@@ -1,4 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:hardware_app/level3/bga.dart';
+import 'package:hardware_app/level3/change_chip.dart';
+import 'package:hardware_app/level3/common_prob.dart';
+import 'package:hardware_app/level3/disUma.dart';
+import 'package:hardware_app/level3/dismem.dart';
+import 'package:hardware_app/level3/lcdled.dart';
+import 'package:hardware_app/level3/noboot.dart';
+import 'package:hardware_app/level3/nopower.dart';
+import 'package:hardware_app/level3/nothingscreen.dart';
+import 'package:hardware_app/level3/watered.dart';
 
 class level3 extends StatelessWidget {
   const level3({Key? key}) : super(key: key);
@@ -24,7 +34,13 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => nopower_prob_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -39,7 +55,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => noboot_prob_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -54,7 +75,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => bga_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -69,7 +95,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => change_chip_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -84,7 +115,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => watered_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -99,7 +135,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => lcdled_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -114,7 +155,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => disuma_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -129,7 +175,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => disram_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -144,7 +195,12 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => common_prob_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -159,7 +215,13 @@ class level3 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => nothing_screen_main()),
+                  );
+                },
               ),
             ),
           ],

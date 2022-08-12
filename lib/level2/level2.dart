@@ -1,5 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:hardware_app/Pishniyaz/resistor.dart';
+import 'package:hardware_app/level2/IO.dart';
+import 'package:hardware_app/level2/Usb_hdmi_prob.dart';
+import 'package:hardware_app/level2/bios_programming.dart';
+import 'package:hardware_app/level2/biosvsec.dart';
+import 'package:hardware_app/level2/change_component.dart';
+import 'package:hardware_app/level2/charge_prob.dart';
+import 'package:hardware_app/level2/connection_prob.dart';
+import 'package:hardware_app/level2/me_region.dart';
+import 'package:hardware_app/level2/motherboard_volt.dart';
+import 'package:hardware_app/level2/network_prob.dart';
+import 'package:hardware_app/level2/pwm_cpu.dart';
+import 'package:hardware_app/level2/pwm_mem.dart';
+import 'package:hardware_app/level2/sound_prob.dart';
 
 class level2 extends StatelessWidget {
   const level2({Key? key}) : super(key: key);
@@ -25,7 +38,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => change_comp_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -40,7 +58,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => biosvsec_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -55,7 +78,13 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => biosprogramming_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -70,7 +99,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => io_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -85,7 +119,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => me_region_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -100,7 +139,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => charge_prob_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -115,7 +159,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => cpu_pwm_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -130,7 +179,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => mem_pwm_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -145,7 +199,13 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => motherboard_voltage_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -160,7 +220,12 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => sound_prob_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -175,7 +240,13 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => network_prob_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -190,7 +261,13 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => connection_prob_main()),
+                  );
+                },
               ),
             ),
             Card(
@@ -205,7 +282,13 @@ class level2 extends StatelessWidget {
                   textDirection: TextDirection.rtl,
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => usbhdmi_prob_main()),
+                  );
+                },
               ),
             ),
           ],
