@@ -27,14 +27,19 @@ environment:
 # the latest version available on pub.dev. To see which dependencies have newer
 # versions available, run `flutter pub outdated`.
 
+flutter-icons:
+  android: true
+  ios: true
+  image_path: "assets/logoapp.png"
   
 dependencies:
   flutter:
     sdk: flutter
   flutter_localizations:
     sdk: flutter  
-
-   
+  
+  flutter_launcher_icons: ^0.10.0  
+  # webview_flutter: ^3.0.4 
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.

@@ -9,6 +9,8 @@ import 'package:hardware_app/Pishniyaz/Pishniyaz.dart';
 import 'package:hardware_app/level1/level1.dart';
 import 'package:hardware_app/level2/level2.dart';
 import 'package:hardware_app/level3/level3.dart';
+import 'package:hardware_app/webView.dart';
+// import 'package:webview_flutter/webview_flutter.dart';
 
 class SecondScreen extends StatelessWidget {
   @override
@@ -23,12 +25,33 @@ class SecondScreen extends StatelessWidget {
                       icon: const Icon(Icons.menu),
                       onPressed: () {
                         Scaffold.of(context).openDrawer();
+
                         print("Opeeeened");
                       },
                     ),
                     actions: [
                       IconButton(
-                          onPressed: () {}, icon: const Icon(Icons.search))
+                          onPressed: () {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(
+                                content: const Text(
+                                    '!! برای مشاهده ویدیو ها حتما با فیلترشکن وارد شوید'),
+
+                                duration: const Duration(milliseconds: 3000),
+                                width: 320.0, // Width of the SnackBar.
+
+                                padding: const EdgeInsets.symmetric(
+                                  horizontal:
+                                      20.0, // Inner padding for SnackBar content.
+                                ),
+                                behavior: SnackBarBehavior.floating,
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(10.0),
+                                ),
+                              ),
+                            );
+                          },
+                          icon: const Icon(Icons.help_outline_outlined))
                     ],
                     expandedHeight: 240,
                     backgroundColor: Color.fromARGB(255, 69, 9, 129),
@@ -134,6 +157,22 @@ class SecondScreen extends StatelessWidget {
                     },
                   ),
                 ),
+                // Card(
+                //   child: ListTile(
+                //     title: Text(
+                //       'کوییز آخر فصل',
+                //       textDirection: TextDirection.rtl,
+                //       textAlign: TextAlign.center,
+                //     ),
+                //     onTap: () {
+                //       Navigator.push(
+                //         context,
+                //         MaterialPageRoute(
+                //             builder: (context) => const webviewapp()),
+                //       );
+                //     },
+                //   ),
+                // ),
               ],
             )));
   }
