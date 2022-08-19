@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:flutter/material.dart';
+import 'package:hardware_app/about_us.dart';
 import 'package:hardware_app/drawer_item.dart';
 import 'package:hardware_app/people.dart';
 import 'package:hardware_app/drawer_item.dart';
@@ -49,13 +50,13 @@ class NavigationDrawer extends StatelessWidget {
               const SizedBox(
                 height: 5,
               ),
-              DrawerItem(
-                  name: 'Settings',
-                  icon: Icons.settings,
-                  onPressed: () => onItemPressed(context, index: 2)),
-              const SizedBox(
-                height: 5,
-              ),
+              // DrawerItem(
+              //     name: 'Settings',
+              //     icon: Icons.settings,
+              //     onPressed: () => onItemPressed(context, index: 2)),
+              // const SizedBox(
+              //   height: 5,
+              // ),
               DrawerItem(
                   name: 'About Us',
                   icon: Icons.people_alt_outlined,
@@ -130,6 +131,11 @@ class NavigationDrawer extends StatelessWidget {
     Navigator.pop(context);
 
     switch (index) {
+      case 3:
+        Navigator.push(
+            context, MaterialPageRoute(builder: (context) => about_us()));
+        break;
+
       case 4:
         Navigator.push(context,
             MaterialPageRoute(builder: (context) => Termandcondition()));

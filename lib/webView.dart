@@ -1,24 +1,25 @@
-// import 'package:flutter/material.dart';
-// import 'package:hardware_app/main.dart';
-// import 'package:webview_flutter/webview_flutter.dart';
+import 'package:flutter/foundation.dart';
+import 'package:url_launcher/url_launcher.dart';
+import 'package:flutter/foundation.dart';
 
-// void main() => runApp(webviewapp());
+class Utils {
+  static Future openLink({
+    required String url,
+  }) =>
+      _launchUrl(url);
 
-// class webviewapp extends StatelessWidget {
-//   const webviewapp({Key? key}) : super(key: key);
+  static Future _launchUrl(String url) async {
+    if (await canLaunch(url)) {
+      await launch(url);
+    }
+  }
 
-//   @override
-//   Widget build(BuildContext context) {
-//     return MaterialApp(
-//       home: Scaffold(
-//         appBar: AppBar(
-//           title: Text('Welcp'),
-//         ),
-//         body: WebView(
-//           // initialUrl: "https://unsplash.com",
-//           javascriptMode: JavascriptMode.unrestricted,
-//         ),
-//       ),
-//     );
-//   }
-// }
+  static Future openEmail(
+      {required String toEmail,
+      required String subject,
+      required String body}) async {
+    final url =
+        'mailto:$toEmail?subject=${Uri.encodeFull(subject)}&body=${Uri.encodeFull(body)}';
+    await _launchUrl(url);
+  }
+}
