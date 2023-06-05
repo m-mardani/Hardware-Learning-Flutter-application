@@ -1,16 +1,14 @@
-# hardware_app
+# Hardware learning Flutter Application
 
-A new Flutter project.
+This project is based on Flutter to learn about hardware and laptop repair.
+This application is designed in the Persian language.
 
-## Getting Started
+## UI Result : 
+
+<img src="https://github.com/m-mardani/Flutter-Hardware-Learning-application/assets/50184822/1afd734a-3167-4a81-89d3-f1f5bcffcb35" width=300 height=600>
+<img src="https://github.com/m-mardani/Flutter-Hardware-Learning-application/assets/50184822/a8b5a9de-413e-4f9c-b553-85db8238df4e" width=300 height=600>
+<img src="https://github.com/m-mardani/Flutter-Hardware-Learning-application/assets/50184822/b54f080f-8675-476b-a65f-1582605fe1ea" width=300 height=600>
+
+
 
 This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
