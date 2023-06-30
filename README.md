@@ -5,9 +5,12 @@ This application is designed in the Persian language.
 
 ## UI Result : 
 
-<img src="https://github.com/m-mardani/Flutter-Hardware-Learning-application/assets/50184822/1afd734a-3167-4a81-89d3-f1f5bcffcb35" width=300 height=600>
-<img src="https://github.com/m-mardani/Flutter-Hardware-Learning-application/assets/50184822/a8b5a9de-413e-4f9c-b553-85db8238df4e" width=300 height=600>
-<img src="https://github.com/m-mardani/Flutter-Hardware-Learning-application/assets/50184822/b54f080f-8675-476b-a65f-1582605fe1ea" width=300 height=600>
+<img src="https://github.com/m-mardani/Hardware-Learning-Flutter-application/blob/master/images/res1.jpg" width=300 height=600>
+<img src="https://github.com/m-mardani/Hardware-Learning-Flutter-application/blob/master/images/res2.jpg" width=300 height=600>
+<img src="https://github.com/m-mardani/Hardware-Learning-Flutter-application/blob/master/images/res3.jpg" width=300 height=600>
+<img src="https://github.com/m-mardani/Hardware-Learning-Flutter-application/blob/master/images/res4.jpg" width=300 height=600>
+<img src="https://github.com/m-mardani/Hardware-Learning-Flutter-application/blob/master/images/res5.jpg" width=300 height=600>
+<img src="https://github.com/m-mardani/Hardware-Learning-Flutter-application/blob/master/images/res6.jpg" width=300 height=600>
 
 
 
