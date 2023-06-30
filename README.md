@@ -15,8 +15,9 @@ This application is designed in the Persian language.
 <img src="https://github.com/m-mardani/Hardware-Learning-Flutter-application/blob/master/images/res6.jpg" width=300 height=600>
 </p>
 
-Hugh Jeffreys
+
 ## Documentaries  References: 
 * <a href="https://www.youtube.com/@electronicsrepairschool" target="_blank">YouTube Videos of Electronics Repair School</a> -Electronics Repair School
 * <a href="https://www.youtube.com/@HughJeffreys" target="_blank">YouTube Videos of Hugh Jeffreys</a> -Hugh Jeffreys
 * <a href="https://www.youtube.com/@flutterdev" target="_blank">Flutter Dev</a> -Flutter Dev
+* <a href="https://www.youtube.com/@pauk7700" target="_blank">SaldatoreTV</a> -SaldatoreTV
